@@ -111,14 +111,5 @@ class EmployeeController extends Controller
         return redirect()->route('employees.index')->with('success', 'Employee deleted');
     }
 
-    // // Bonus Features
-    // public function exportExcel() {
-    //     return Excel::download(new EmployeesExport, 'employees.xlsx');
-    // }
-
-    // public function importExcel(Request $request) {
-    //     $request->validate(['import_file' => 'required|file']);
-    //     Excel::import(new EmployeesImport, $request->file('import_file'));
-    //     return back()->with('success', 'Imported Successfully');
-    // }
+   
 }
